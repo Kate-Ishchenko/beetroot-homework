@@ -1,0 +1,405 @@
+<!DOCTYPE html>
+<html lang="en" id="semantic_tags">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap"
+      rel="stylesheet"
+    />
+    <title>Semantic HTML</title>
+    <style>
+      html {
+        scroll-behavior: smooth;
+      }
+      body {
+        margin: 0;
+        padding: 0;
+        font-family: "Roboto", sans-serif;
+      }
+      nav {
+        width: 100%;
+        padding: 16px 0 0 0;
+        position: fixed;
+        left: 50%;
+        transform: translateX(-50%);
+        background-color: white;
+      }
+      .main_menu {
+        display: flex;
+        justify-content: center;
+        gap: 16px;
+        list-style: none;
+        padding: 0;
+      }
+      .main_menu_item {
+        text-decoration: none;
+      }
+      .main_article {
+        padding-top: 16px;
+        display: flex;
+        justify-content: space-between;
+        gap: 16px;
+        flex-flow: row wrap;
+      }
+      .main_article_text {
+        width: 35%;
+      }
+      .main_image {
+        width: 63%;
+        height: auto;
+      }
+      main,
+      footer {
+        width: 80%;
+        margin: 0 auto;
+        padding: 64px 16px 32px 16px;
+      }
+      header {
+        padding: 16px 0 6px 0;
+      }
+      .accent {
+        color: #b03634;
+      }
+      .example {
+        background-color: #f1f1f1;
+        padding: 16px;
+      }
+      .example_code {
+        background-color: white;
+      }
+      .small_margin {
+        margin-left: 12px;
+      }
+      .medium_margin {
+        margin-left: 24px;
+      }
+      .text_align {
+        text-align: center;
+      }
+      .embed_video {
+        padding: 32px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+      }
+    </style>
+  </head>
+  <body>
+    <nav>
+      <ul class="main_menu">
+        <li>
+          <a href="#semantic_tags" class="main_menu_item"
+            >Семантичні елементи</a
+          >
+        </li>
+        <li>
+          <a href="#new_elements" class="main_menu_item"
+            >Нові семантичні елементи</a
+          >
+        </li>
+        <li>
+          <a href="#section_tag" class="main_menu_item"
+            >HTML5 <span><</span>section<span>></span> елемент</a
+          >
+        </li>
+        <li>
+          <a href="#article_tag" class="main_menu_item"
+            >HTML5 <span><</span>article<span>></span> елемент</a
+          >
+        </li>
+        <li>
+          <a href="#header_tag" class="main_menu_item"
+            >HTML5 <span><</span>header<span>></span> елемент</a
+          >
+        </li>
+        <li>
+          <a href="#footer_tag" class="main_menu_item"
+            >HTML5 <span><</span>footer<span>></span> елемент</a
+          >
+        </li>
+      </ul>
+    </nav>
+    <main>
+      <section>
+        <article class="main_article">
+          <div class="main_article_text">
+            <header>
+              <h1>HTML5 Семантичні елементи</h1>
+            </header>
+            <div>
+              <p>
+                Семантичний елемент чітко описує його значення як для браузера,
+                так і для розробника.
+              </p>
+              <p>
+                Приклади <strong>не семантичних </strong>елементів:
+                <span><</span><span class="accent">div</span><span>></span> і
+                <span><</span><span class="accent">span</span><span>></span> -
+                нічого не говорить про його вміст.
+              </p>
+              <p>
+                Приклади <strong>семантичних </strong>елементів: <span><</span
+                ><span class="accent">form</span><span>></span>, <span><</span
+                ><span class="accent">table</span><span>></span> і <span><</span
+                ><span class="accent">article</span><span>></span>
+                - чітко визначає його зміст.
+              </p>
+              <h2>Підтримка браузерів</h2>
+              <div>
+                <p>
+                  Семантичні елементи HTML5 підтримуються у всіх сучасних
+                  браузерах.
+                </p>
+                <p>
+                  Крім того, ви можете "навчити" старих браузерів, як обробляти
+                  "невідомі елементи".
+                </p>
+                Прочитайте про це в
+                <a
+                  href="https://www.blogger.com/blog/page/edit/2590532390801722394/850003172824707311#"
+                  target="_blank"
+                  >підтримці браузера HTML5</a
+                >
+                .
+              </div>
+            </div>
+          </div>
+          <img src="src/my_image.jpg" alt="w3schools.com site" class="main_image" />
+        </article>
+      </section>
+      <section id="new_elements">
+        <article>
+          <header><h2>Нові семантичні елементи в HTML5</h2></header>
+          <div>
+            <p>
+              HTML5 пропонує нові семантичні елементи для визначення різних
+              частин веб-сторінки:
+            </p>
+            <ul>
+              <li>
+                <span><</span><span class="accent">section</span><span>></span>
+              </li>
+              <li>
+                <span><</span><span class="accent">article</span><span>></span>
+              </li>
+              <li>
+                <span><</span><span class="accent">header</span><span>></span>
+              </li>
+              <li>
+                <span><</span><span class="accent">footer</span><span>></span>
+              </li>
+            </ul>
+          </div>
+        </article>
+      </section>
+      <section id="section_tag">
+        <article>
+          <header>
+            <h2>HTML5 <span><</span>section<span>></span> елемент</h2>
+          </header>
+          <div>
+            <p>
+              Елемент <span><</span><span class="accent">section</span
+              ><span>></span> визначає розділ в документі.
+            </p>
+            <p>
+              Згідно з
+              <a
+                href="https://www.w3schools.com/html/html5_semantic_elements.asp"
+                target="_blank"
+                >документацією w3schools</a
+              >
+              HTML5: "розділ представляє собою тематичну угруповання контенту,
+              зазвичай з заголовком".
+            </p>
+            <p>
+              Домашня сторінка зазвичай може бути розділена на розділи для
+              ознайомлення, змісту і контактної інформації.
+            </p>
+            <div class="example">
+              <p>Приклад</p>
+              <div class="example_code">
+                <code>
+                  <span><</span><span class="accent">section</span
+                  ><span>></span>
+                  <div class="small_margin">
+                    <span><</span><span class="accent">h1</span
+                    ><span>></span>WWF<span><</span
+                    ><span class="accent">/h1</span><span>></span>
+                  </div>
+                  <div class="small_margin">
+                    <span><</span><span class="accent">p</span><span>></span>The
+                    World Wide Fund for Nature (WWF) is...<span><</span
+                    ><span class="accent">/p</span><span>></span>
+                  </div>
+                  <span><</span><span class="accent">/section</span
+                  ><span>></span>
+                </code>
+              </div>
+            </div>
+          </div>
+        </article>
+      </section>
+      <section id="article_tag">
+        <article>
+          <header>
+            <h2>HTML5 <span><</span>article<span>></span> елемент</h2>
+          </header>
+          <div>
+            <p>
+              Елемент <span><</span><span class="accent">article</span
+              ><span>></span>визначає незалежний, автономний вміст.
+            </p>
+            <p>
+              Стаття повинна мати сенс самостійно, і вона повинна мати
+              можливість читати його незалежно від іншої частини веб-сайту.
+            </p>
+            <p>
+              Приклади того, де можна використовувати елемент
+              <span><</span><span class="accent">article</span><span>></span>:
+            </p>
+            <ul>
+              <li>Повідомлення на форумі</li>
+              <li>блозі</li>
+              <li>Газетна стаття</li>
+            </ul>
+          </div>
+          <div class="example">
+            <p>Приклад</p>
+            <div class="example_code">
+              <code>
+                <span><</span><span class="accent">article</span><span>></span>
+                <div class="small_margin">
+                  <span><</span><span class="accent">h1</span><span>></span>What
+                  Does WWF Do?<span><</span><span class="accent">/h1</span
+                  ><span>></span>
+                </div>
+                <div class="small_margin">
+                  <span><</span><span class="accent">p</span><span>></span>WWF`s
+                  mission is to stop degradation of our planet`s natural
+                  environment, and build a future in which humans live in
+                  harmony with nature.<span><</span
+                  ><span class="accent">/p</span><span>></span>
+                </div>
+                <span><</span><span class="accent">/article</span><span>></span>
+              </code>
+            </div>
+          </div>
+        </article>
+      </section>
+      <section id="header_tag">
+        <article>
+          <header>
+            <h2>HTML5 <span><</span>header<span>></span> елемент</h2>
+          </header>
+          <div>
+            <p>
+              Елемент <span><</span><span class="accent">header</span
+              ><span>></span> задає заголовок для документа або розділу.
+            </p>
+            <p>
+              Елемент <span><</span><span class="accent">header</span
+              ><span>></span> повинен використовуватися в якості контейнера для
+              вступного змісту.
+            </p>
+            <p>
+              В одному документі може бути кілька елементів
+              <span><</span><span class="accent">header</span><span>></span> .
+            </p>
+            <p>У наступному прикладі визначається заголовок для статті:</p>
+          </div>
+          <div class="example">
+            <p>Приклад</p>
+            <div class="example_code">
+              <code>
+                <span><</span><span class="accent">article</span><span>></span>
+                <div class="small_margin">
+                  <span><</span><span class="accent">header</span><span>></span>
+                </div>
+                <div class="medium_margin">
+                  <span><</span><span class="accent">h1</span><span>></span>What
+                  Does WWF Do?<span><</span><span class="accent">/h1</span
+                  ><span>></span>
+                </div>
+                <div class="medium_margin">
+                  <span><</span><span class="accent">p</span><span>></span>WWF`s
+                  mission:<span><</span><span class="accent">/p</span
+                  ><span>></span>
+                </div>
+                <div class="small_margin">
+                  <span><</span><span class="accent">/header</span
+                  ><span>></span>
+                </div>
+                <div class="small_margin">
+                  <span><</span><span class="accent">p</span><span>></span>WWF`s
+                  mission is to stop degradation of our planet`s natural
+                  environment, and build a future in which humans live in
+                  harmony with nature.<span><</span
+                  ><span class="accent">/p</span><span>></span>
+                </div>
+                <span><</span><span class="accent">/acticle</span><span>></span>
+              </code>
+            </div>
+          </div>
+        </article>
+      </section>
+      <section id="footer_tag">
+        <header>
+          <h2>HTML5 <span><</span>footer<span>></span> елемент</h2>
+        </header>
+        <div>
+          <p>
+            Елемент <span><</span><span class="accent">footer</span
+            ><span>></span> вказує нижній колонтитул для документа або розділу.
+          </p>
+          <p>
+            Нижній колонтитул зазвичай містить автора документа, інформацію про
+            авторське право, посилання на умови використання, контактні дані і
+            т.д.
+          </p>
+          <p>
+            В одному документі може бути кілька елементів <span><</span
+            ><span class="accent">footer</span><span>></span>.
+          </p>
+        </div>
+        <div class="example">
+          <p>Приклад</p>
+          <div class="example_code">
+            <code>
+              <span><</span><span class="accent">footer</span><span>></span>
+              <div class="small_margin">
+                <span><</span><span class="accent">p</span><span>></span>Posted
+                by: Hege Refsnes<span><</span><span class="accent">/p</span
+                ><span>></span>
+              </div>
+              <div class="small_margin">
+                <span><</span><span class="accent">p</span><span>></span>Contact
+                information: <span><</span
+                ><span class="accent">a href</span
+                >="mailto:someone@html5css.com.ua"<span>></span>someone@html5css.com.ua<span
+                  ><</span
+                ><span class="accent">/a</span><span>>.</span><span><</span
+                ><span class="accent">/p</span><span>></span>
+              </div>
+              <span><</span><span class="accent">/footer</span><span>></span>
+            </code>
+          </div>
+        </div>
+      </section>
+      <section  class="embed_video" >
+        <header>
+            <h2>Youtube video</h2>
+          </header>
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/dEBVe8Ij7JU" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+      </section>
+    </main>
+    <footer>
+      <p class="text_align">&copy; 2022 Katya Ishchenko</p>
+    </footer>
+  </body>
+</html>
