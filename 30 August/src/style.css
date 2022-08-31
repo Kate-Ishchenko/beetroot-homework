@@ -1,0 +1,80 @@
+* {
+    box-sizing: border-box;
+  }
+  html {
+    scroll-behavior: smooth; /*плавно переміщення по екрану,документу*/
+  }
+  body {
+    padding: 0; /*внутрішній відступ*/
+    margin: 0; /*зовнішній відступ*/
+    background-color: white;
+    font-family: "Open Sans";
+  }
+  .main-nav {
+    color: #828282;
+    display: flex;
+    list-style: none;
+    gap: 16px;
+    justify-content: center;
+    align-items: center;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 25px;
+    letter-spacing: 0.02em;
+  }
+  main, header {
+    margin: 0 auto;
+    width: 100%;
+  }
+  .maininfo {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    margin-bottom: -4px;
+  }
+  .main-info-container {
+    width: 60%;
+  }
+  .main-header {
+    align-self: flex-start;
+  }
+  .main-nav-link {
+    text-decoration: none;
+  }
+  .main-photo {
+    width: 100%;
+    height: auto;
+  }
+  
+  .about-me {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 64px 0;
+    background-color: #f6f6f6;
+  }
+  
+  .about-me-container {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .about-me-text-container {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      width: 60%;
+  }
+  .about-me-header {
+    margin: 0;
+    padding: 0;
+  }
+  .about-me-text {
+    display: flex;
+    text-align: center;
+  }
+  
