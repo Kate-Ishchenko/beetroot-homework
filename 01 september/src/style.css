@@ -1,0 +1,81 @@
+* {
+  transition: all 0.1s ease-in; /*плавне наведення миші на елемент all-всі елементи,0.1с-час, ease-in-вид переходу*/
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+body {
+  background-color: #3b3f45;
+  color: white;
+  font-size: 24px;
+  font-family: Arial, Helvetica, sans-serif;
+}
+header,
+footer {
+  color: #ff8984;
+  text-align: center;
+  background-color: #4a4f56;
+  padding: 22px 0;
+}
+footer {
+  width: 696px;
+  margin: 0 auto;
+}
+h1 {
+  font-size: 24px;
+}
+h2 {
+  font-size: 16px;
+}
+.main-form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 16px 0 48px 0;
+}
+.main-list {
+  list-style: none;
+  cursor: pointer;
+}
+.main-list li {
+  background-color: #88839e;
+  padding: 18px 256px 18px 16px;
+}
+.main-list li:nth-child(even) {
+  background-color: #7a7593;
+}
+.main-list li:hover,
+.main-list li:focus {
+  background-color: #625e77;
+  border-top: 4px solid white;
+  border-bottom: 4px solid white;
+}
+.main-list li:active {
+  background-color: #ff8984;
+}
+.main-list [type="checkbox"]:checked + p {
+  text-decoration: line-through;
+  color: #9b96ac;
+}
+input[type="checkbox"] {
+  transform: scale(2);
+  cursor: pointer;
+}
+.main-list-checkbox {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  cursor: pointer;
+}
+.checkbox-text {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+.small-text {
+  font-size: 16px;
+}
+.main-list [type="checkbox"]:checked + .checkbox-text {
+  text-decoration: line-through;
+  color: #9b96ac;
+}
