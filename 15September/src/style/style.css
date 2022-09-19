@@ -1,0 +1,256 @@
+* *::after *::before {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: "Lato", sans-serif;
+  font-size: 16px;
+  line-height: 24px;
+  color: #3c3c3c;
+}
+
+h1 {
+  margin: 0;
+  font-weight: 700;
+  font-size: 34px;
+  line-height: 41px;
+  text-align: center;
+  letter-spacing: 0.13em;
+  text-transform: uppercase;
+}
+
+h2 {
+  margin: 0;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 22px;
+  color: #282528;
+}
+
+p {
+  margin: 0;
+}
+
+img {
+  display: block;
+  width: 100%;
+}
+
+.header {
+  border-bottom: 1px solid #8d8d8d;
+  width: 100%;
+  height: 80px;
+  left: 0px;
+  top: 0px;
+  background: #ffffff;
+}
+
+.header__naw-item,
+.footer__naw-item {
+  font-style: normal;
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 24px;
+  text-transform: uppercase;
+  color: #3c3c3c;
+  cursor: pointer;
+}
+
+.header__naw-link:hover,
+.header__naw-link:focus,
+.footer__naw-link:hover,
+.footer__naw-link:focus {
+  color: #18b5dc;
+}
+
+.header__naw-link,
+.footer__naw-link {
+  text-decoration: none;
+  color: #3c3c3c;
+  cursor: pointer;
+}
+
+.header__naw-list,
+.footer__naw-list {
+  list-style: none;
+  display: flex;
+  gap: 30px;
+  padding: 0;
+  margin: 0;
+  flex-wrap: wrap;
+}
+
+.header_container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 130px;
+  margin: 0 auto;
+}
+
+.header__btn-callback {
+  border: 1px solid #3c3c3c;
+  width: 130px;
+  height: 42px;
+  background-color: #ffffff;
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 22px;
+  text-transform: uppercase;
+  color: #3c3c3c;
+  display: inline-block;
+  padding: 10px 19px;
+  transition: background-color ease-in-out 0.3s;
+}
+
+.section_content {
+  background-color: #f6f6f6;
+}
+
+.section-top {
+  text-align: center;
+  margin: 0 auto;
+  width: 100%;
+  max-width: 1170px;
+  padding-top: 150px;
+}
+
+.section__img-holder {
+  width: 45px;
+  height: 4px;
+  margin: 0 auto;
+  padding-top: 20px;
+}
+
+.section__text-holder {
+  padding-top: 20px;
+  width: 45%;
+  margin: 0 auto;
+}
+
+.section__text-subtitle {
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 24px;
+  text-align: center;
+  color: #3c3c3c;
+}
+
+.section-team {
+  display: flex;
+  flex-flow: row wrap;
+  gap: 30px;
+  width: 83%;
+  justify-content: space-between;
+  align-items: center;
+  padding: 60px 0 150px ;
+  margin: 0 auto;
+  max-width: 1170px;
+}
+
+.section__hover-image {
+  width: 270px;
+  height: 270px;
+}
+
+.section__team-item-hover {
+  position: relative;
+}
+
+.section-team .section__hover-image:hover .section__social-list {
+  opacity: 1;
+  visibility: visible;
+}
+
+.section__social-list {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #18b5dc;
+  width: 100%;
+  height: 100%;
+  transform: translate(-50%, -50%);
+  transition: all ease-in-out 0.3s;
+  opacity: 0;
+  gap: 4px;
+}
+
+.section__social-list:hover {
+  opacity: 1;
+}
+
+.section-team__social-icon {
+    width: 42px;
+    height: 42px;
+    border: 1px solid white;
+}
+
+.section__img-row {
+  position: relative;
+  padding: 0;
+}
+.footer {
+  padding: 40px 0;
+}
+
+.footer .section-top {
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  align-items: center;
+}
+
+.footer__container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.footer__container_logo-holder {
+  align-items: center;
+  flex-wrap: wrap;
+  width: 170px;
+  height: 60px;
+  flex: none;
+  order: 0;
+  flex-grow: 0;
+  z-index: 0;
+  padding: 40px 635px;
+}
+.footer__header__naw {
+  align-items: center;
+}
+
+.footer__header__naw-list {
+  display: flex;
+  gap: 36px;
+  list-style: none;
+  padding: 10px 600px;
+}
+.footer__container_logo-link:hover,
+.footer__container_logo-link:focus {
+  color: #18b5dc;
+}
+.footer__container_logo-link {
+  text-decoration: none;
+  color: #3c3c3c;
+  cursor: pointer;
+}
+.footer__list-contackt {
+  display: flex;
+  align-items: center;
+  padding: 18px 500px;
+  gap: 10px;
+  cursor: pointer;
+}
+
+.footer__naw-item {
+  font-size: 18px;
+}
