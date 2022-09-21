@@ -1,0 +1,112 @@
+*,
+* :before,
+:after {
+    box-sizing: border-box;
+}
+body {
+    margin: 0;
+    font-family: 'Katla', sans-serif;
+    font-size: 16px;
+    line-height: 20px;
+    color: rgba(29, 31, 46, 0.7);
+}
+h1 {
+    margin: 0 0 10px;
+    font-weight: 400;
+    font-size: 47px;
+    line-height: 60px;
+}
+h2 {
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 18px;
+    text-align: center;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    color: #1D1F2E;
+    margin: 0 0 100px;
+}
+img {
+    width: 100%;
+    display: block;
+}
+.header .header_container{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+.header_container{
+    width: 100%;
+    max-width: 970px;
+    padding: 20px 15px;
+    margin: 0  auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.naw_header-list{
+    list-style: none;
+    padding: 0;
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0 -15px;
+    gap: 30px;
+}
+.naw_header-item {
+    padding: 0 15px;
+
+}
+.section_content{
+    background-color:white;
+    padding: 20px 0;
+    margin-bottom: 123px;
+    background-repeat: no-repeat;
+    background-position: 50% 100%;
+    background-size: contain;
+    display: flex;
+    align-items: center;
+    min-height: 530px;
+    margin: 0 auto;
+    font-size: 17px;
+    line-height: 30px;
+    text-align: center;
+    width:80%;
+    box-sizing: border-box;
+   flex-flow: column;
+}
+.section-menu{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 20px;
+}
+.section-menu_product{
+    background-color:white;
+    padding: 20px 0;
+    margin-bottom: 123px;
+    background-repeat: no-repeat;
+    background-position: 50% 100%;
+    background-size: contain;
+    display: flex;
+    align-items: center;
+    min-height: 530px;
+    
+    font-size: 17px;
+    line-height: 30px;
+    text-align: center;
+    width:25%;
+    box-sizing: border-box;
+   flex-flow: column;
+}
+.logo-holder{
+    width: 40px;
+    height: 40px;
+    
+}
+.header__naw-link{
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: 700;
+    text-transform: uppercase;
+    color: #1D1F2E;
+}
