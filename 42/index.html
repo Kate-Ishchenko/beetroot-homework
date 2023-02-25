@@ -1,0 +1,636 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&family=Source+Sans+Pro:ital,wght@0,200;0,300;0,400;0,600;0,700;0,900;1,200;1,300;1,400;1,600;1,700;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="dist/css/main.css" />
+    <title>MONTICELLO</title>
+  </head>
+  <body>
+    <header class="header">
+      <nav class="header__navigation">
+        <div class="header__logo-container">
+          <img src="src/img/logo.svg" alt="logo" class="header__logo" />
+        </div>
+        <ul class="header__navigation-container">
+          <li class="header__navigation-item">
+            <div
+              class="header__navigation-bullet header__navigation-item__active"
+            ></div>
+            <div class="header__navigation-text">About us</div>
+          </li>
+          <li class="header__navigation-item">
+            <div class="header__navigation-bullet"></div>
+            <div class="header__navigation-text">Projects</div>
+          </li>
+          <li class="header__navigation-item">
+            <div class="header__navigation-bullet"></div>
+            <div class="header__navigation-text">News</div>
+          </li>
+          <li class="header__navigation-item">
+            <div class="header__navigation-bullet"></div>
+            <div class="header__navigation-text">Contact</div>
+          </li>
+        </ul>
+        <div class="header__social-icons-container">
+          <div class="header__social-icon-wrapper">
+            <span class="icon-facebook__social"></span>
+          </div>
+          <div class="header__social-icon-wrapper">
+            <span class="icon-twitter__social"></span>
+          </div>
+          <div class="header__social-icon-wrapper">
+            <span class="icon-instagram__social"></span>
+          </div>
+        </div>
+        <div class="header__burger-icon">
+          <i class="bx bx-menu"></i>
+        </div>
+      </nav>
+      <div class="header__heading-container">
+        <div class="swiper mySwiper">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide">
+              <div class="header__main-title-wrapper">
+                <h1 class="header__main-title">SIMPLE & MODERN</h1>
+                <h2 class="header__main-subtitle">
+                  WE MAKE THE WORLD BEAUTIFUL EVERYDAY
+                </h2>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="header__main-title-wrapper">
+                <span class="header__main-title">You dream it</span>
+                <span class="header__main-subtitle">
+                  Let’s renovate your living space
+                </span>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="header__main-title-wrapper">
+                <span class="header__main-title">Vision & quality</span>
+                <span class="header__main-subtitle">
+                  Innovative renovation at your side
+                </span>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="header__main-title-wrapper">
+                <span class="header__main-title">Solid ground</span>
+                <span class="header__main-subtitle">
+                  Constructing homes with pride
+                </span>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="header__main-title-wrapper">
+                <span class="header__main-title">Broad vision</span>
+                <span class="header__main-subtitle">
+                  We build the house. You make it a home
+                </span>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="header__main-title-wrapper">
+                <span class="header__main-title">Real results</span>
+                <span class="header__main-subtitle">
+                  Construction you can count on
+                </span>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="header__main-title-wrapper">
+                <span class="header__main-title">Promote safety</span>
+                <span class="header__main-subtitle">
+                  Doing it right costs less than doing it over
+                </span>
+              </div>
+            </div>
+          </div>
+          <div class="swiper-pagination"></div>
+        </div>
+        <div class="header__arrow__down-wrapper">
+          <span class="icon-arrow__down"></span>
+        </div>
+      </div>
+      <div class="img-holder">
+        <img
+          src="src/img/heading_background.png"
+          alt="building"
+          class="img-desktop1920"
+        />
+        <img
+          src="src/img/heading_background.png"
+          alt="building"
+          class="img-desktop1360"
+        />
+        <img
+          src="src/img/heading_background.png"
+          alt="building"
+          class="img-desktop1024"
+        />
+        <img
+          src="src/img/heading_background.png"
+          alt="building"
+          class="img-tablet768"
+        />
+        <img
+          src="src/img/heading_background.png"
+          alt="building"
+          class="img-mobile576"
+        />
+      </div>
+    </header>
+    <main class="main">
+      <section class="what-we-do">
+        <h2 class="what-we-do__title">WHAT WE DO</h2>
+        <div class="what-we-do__item-container">
+          <div class="what-we-do__item1-wrapper">
+            <div class="what-we-do__item1-decoration"></div>
+            <div class="what-we-do__item-image-container">
+              <img
+                src="src/img/what-we-do-img1.png"
+                alt="building"
+                class="what-we-do__item-image"
+              />
+            </div>
+          </div>
+
+          <div class="what-we-do__item1-content">
+            <div class="what-we-do__item1-content-container">
+              <h3 class="what-we-do__item-content-subtitle">One world</h3>
+              <h2 class="what-we-do__item-content-title">TRADE CENTER</h2>
+              <p class="what-we-do__item-content-text">
+                Increasing prosperity in our lives can be accomplished by having
+                the right frame of mind. The truth is, our thoughts are very
+                powerful.
+              </p>
+              <button class="what-we-do__item-content-button">
+                more details
+              </button>
+              <div class="what-we-do__item-content-location">
+                <span class="icon-map"></span>
+                <span>New York City, United States - 1776 feet</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="what-we-do__item2-content">
+            <div class="what-we-do__item2-content-container">
+              <h3 class="what-we-do__item-content-subtitle">INTERNATIONAL</h3>
+              <h2 class="what-we-do__item-content-title">COMMERCE CENTRE</h2>
+              <p class="what-we-do__item-content-text">
+                Successful businesses have many things in common, today we’ll
+                look at the big ‘R’ of recognition and how a digital advertising
+                network may help.
+              </p>
+              <button class="what-we-do__item-content-button">
+                more details
+              </button>
+              <div class="what-we-do__item-content-location">
+                <span class="icon-map"></span>
+                <span>Hong Kong - 1588 feet</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="what-we-do__item2-wrapper">
+            <div class="what-we-do__item2-decoration"></div>
+            <div class="what-we-do__item-image-container-two">
+              <img
+                src="src/img/what-we-do-img2.png"
+                alt="building"
+                class="what-we-do__item-image"
+              />
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="latest-news">
+        <h2 class="latest-news__title">latest news</h2>
+        <div class="swiper myNewsSwiper">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide slide-flex">
+              <div class="latest-news__slider-card">
+                <img
+                  src="src/img/latest-news__card1.png"
+                  alt=""
+                  class="latest-news__slider-card-img"
+                />
+                <div class="latest-news__slider-card-body">
+                  <h3 class="latest-news__slider-card-title">
+                    SEE THE UNMATCHED BEAUTY OF THE GREAT.
+                  </h3>
+                  <p class="latest-news__slider-card-text">
+                    Free directories: directories are perfect for customers that
+                    are searching for...
+                  </p>
+                  <div class="latest-news__slider-card-author">
+                    <img
+                      src="src/img/latest-news__card-author1.png"
+                      alt="man"
+                      class="latest-news__slider-card-author-avatar"
+                    />
+                    <div class="latest-news__slider-card-author-wrapper">
+                      <span class="latest-news__slider-card-author-name"
+                        >ALJA BRUN</span
+                      >
+                      <span class="latest-news__slider-card-author-date"
+                        >20 Jan 2020</span
+                      >
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="swiper-slide slide-flex">
+              <div class="latest-news__slider-card">
+                <img
+                  src="src/img/latest-news__card2.png"
+                  alt=""
+                  class="latest-news__slider-card-img"
+                />
+                <div class="latest-news__slider-card-body">
+                  <h3 class="latest-news__slider-card-title">
+                    EFFECTIVE ADVERTISING POINTERS.
+                  </h3>
+                  <p class="latest-news__slider-card-text">
+                    Having a home based business is a wonderful asset to your
+                    life...
+                  </p>
+                  <div class="latest-news__slider-card-author">
+                    <img
+                      src="src/img/latest-news__card-author2.png"
+                      alt="man"
+                      class="latest-news__slider-card-author-avatar"
+                    />
+                    <div class="latest-news__slider-card-author-wrapper">
+                      <span class="latest-news__slider-card-author-name"
+                        >DOMINIC FREEMAN</span
+                      >
+                      <span class="latest-news__slider-card-author-date"
+                        >13 Dec 2019</span
+                      >
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="swiper-slide slide-flex">
+              <div class="latest-news__slider-card">
+                <img
+                  src="src/img/latest-news__card3.png"
+                  alt=""
+                  class="latest-news__slider-card-img"
+                />
+                <div class="latest-news__slider-card-body">
+                  <h3 class="latest-news__slider-card-title">
+                    HYPNOTIZE YOURSELF INTO THE GHOST.
+                  </h3>
+                  <p class="latest-news__slider-card-text">
+                    There are many things that are important to catalog
+                    design...
+                  </p>
+                  <div class="latest-news__slider-card-author">
+                    <img
+                      src="src/img/latest-news__card-author3.png"
+                      alt="man"
+                      class="latest-news__slider-card-author-avatar"
+                    />
+                    <div class="latest-news__slider-card-author-wrapper">
+                      <span class="latest-news__slider-card-author-name"
+                        >ALICE WARD</span
+                      >
+                      <span class="latest-news__slider-card-author-date"
+                        >30 Nov 2019</span
+                      >
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="swiper-slide slide-flex">
+              <div class="latest-news__slider-card">
+                <img
+                  src="src/img/latest-news__card1.png"
+                  alt=""
+                  class="latest-news__slider-card-img"
+                />
+                <div class="latest-news__slider-card-body">
+                  <h3 class="latest-news__slider-card-title">
+                    SEE THE UNMATCHED BEAUTY OF THE GREAT.
+                  </h3>
+                  <p class="latest-news__slider-card-text">
+                    Free directories: directories are perfect for customers that
+                    are searching for...
+                  </p>
+                  <div class="latest-news__slider-card-author">
+                    <img
+                      src="src/img/latest-news__card-author1.png"
+                      alt="man"
+                      class="latest-news__slider-card-author-avatar"
+                    />
+                    <div class="latest-news__slider-card-author-wrapper">
+                      <span class="latest-news__slider-card-author-name"
+                        >ALJA BRUN</span
+                      >
+                      <span class="latest-news__slider-card-author-date"
+                        >20 Jan 2020</span
+                      >
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="swiper-slide slide-flex">
+              <div class="latest-news__slider-card">
+                <img
+                  src="src/img/latest-news__card1.png"
+                  alt=""
+                  class="latest-news__slider-card-img"
+                />
+                <div class="latest-news__slider-card-body">
+                  <h3 class="latest-news__slider-card-title">
+                    SEE THE UNMATCHED BEAUTY OF THE GREAT.
+                  </h3>
+                  <p class="latest-news__slider-card-text">
+                    Free directories: directories are perfect for customers that
+                    are searching for...
+                  </p>
+                  <div class="latest-news__slider-card-author">
+                    <img
+                      src="src/img/latest-news__card-author1.png"
+                      alt="man"
+                      class="latest-news__slider-card-author-avatar"
+                    />
+                    <div class="latest-news__slider-card-author-wrapper">
+                      <span class="latest-news__slider-card-author-name"
+                        >ALJA BRUN</span
+                      >
+                      <span class="latest-news__slider-card-author-date"
+                        >20 Jan 2020</span
+                      >
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="swiper-slide slide-flex">
+              <div class="latest-news__slider-card">
+                <img
+                  src="src/img/latest-news__card1.png"
+                  alt=""
+                  class="latest-news__slider-card-img"
+                />
+                <div class="latest-news__slider-card-body">
+                  <h3 class="latest-news__slider-card-title">
+                    SEE THE UNMATCHED BEAUTY OF THE GREAT.
+                  </h3>
+                  <p class="latest-news__slider-card-text">
+                    Free directories: directories are perfect for customers that
+                    are searching for...
+                  </p>
+                  <div class="latest-news__slider-card-author">
+                    <img
+                      src="src/img/latest-news__card-author1.png"
+                      alt="man"
+                      class="latest-news__slider-card-author-avatar"
+                    />
+                    <div class="latest-news__slider-card-author-wrapper">
+                      <span class="latest-news__slider-card-author-name"
+                        >ALJA BRUN</span
+                      >
+                      <span class="latest-news__slider-card-author-date"
+                        >20 Jan 2020</span
+                      >
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="swiper-slide slide-flex">
+              <div class="latest-news__slider-card">
+                <img
+                  src="src/img/latest-news__card1.png"
+                  alt=""
+                  class="latest-news__slider-card-img"
+                />
+                <div class="latest-news__slider-card-body">
+                  <h3 class="latest-news__slider-card-title">
+                    SEE THE UNMATCHED BEAUTY OF THE GREAT.
+                  </h3>
+                  <p class="latest-news__slider-card-text">
+                    Free directories: directories are perfect for customers that
+                    are searching for...
+                  </p>
+                  <div class="latest-news__slider-card-author">
+                    <img
+                      src="src/img/latest-news__card-author1.png"
+                      alt="man"
+                      class="latest-news__slider-card-author-avatar"
+                    />
+                    <div class="latest-news__slider-card-author-wrapper">
+                      <span class="latest-news__slider-card-author-name"
+                        >ALJA BRUN</span
+                      >
+                      <span class="latest-news__slider-card-author-date"
+                        >20 Jan 2020</span
+                      >
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="swiper-pagination latest-news__pagination"></div>
+        </div>
+        <div class="img-holder">
+          <img
+            src="src/img/latest-news__background.png"
+            alt="building"
+            class="img-desktop1920"
+          />
+          <img
+            src="src/img/latest-news__background.png"
+            alt="building"
+            class="img-desktop1360"
+          />
+          <img
+            src="src/img/latest-news__background.png"
+            alt="building"
+            class="img-desktop1024"
+          />
+          <img
+            src="src/img/latest-news__background.png"
+            alt="building"
+            class="img-tablet768"
+          />
+          <img
+            src="src/img/latest-news__background.png"
+            alt="building"
+            class="img-mobile576"
+          />
+        </div>
+      </section>
+      <section class="gallery">
+        <h2 class="gallery__title">Gallery</h2>
+        <div class="gallery__img-gallery">
+          <div class="gallery__img-gallery-item1">
+            <img
+              src="src/img/gallery__image1.png"
+              alt=""
+              class="gallery__img-gallery-item1-img"
+              data-fancybox
+            />
+          </div>
+          <div class="gallery__img-gallery-item2">
+            <img
+              src="src/img/gallery__image2.png"
+              alt=""
+              class="gallery__img-gallery-item2-img"
+              data-fancybox
+            />
+          </div>
+          <div class="gallery__img-gallery-item3">
+            <img
+              src="src/img/gallery__image3.png"
+              alt=""
+              class="gallery__img-gallery-item3-img"
+              data-fancybox
+            />
+          </div>
+          <div class="gallery__img-gallery-item4">
+            <img
+              src="src/img/gallery__image4.png"
+              alt=""
+              class="gallery__img-gallery-item4-img"
+              data-fancybox
+            />
+          </div>
+          <div class="gallery__img-gallery-item5">
+            <img
+              src="src/img/gallery__image5.png"
+              alt=""
+              class="gallery__img-gallery-item5-img"
+              data-fancybox
+            />
+          </div>
+        </div>
+        <button class="gallery__button">see more</button>
+      </section>
+      <section class="contact-form">
+        <div class="contact-form__map" id="map">
+          <!-- <img src="src/img/Map.png" alt="map" class="contact-form__map-img" /> -->
+        </div>
+        <form class="contact-form__form">
+          <h2 class="contact-form__form-title">Get in touch</h2>
+          <div class="contact-form__form-container">
+            <div class="contact-form__form-container__item">
+              <div class="contact-form__form-container__item-text">
+                <span class="icon-map"></span>
+                <span>91 Nolan Extensions Suite 670</span>
+              </div>
+              <div class="contact-form__form-container__item-text">
+                <span class="icon-phone"></span>
+                <span>+001 356-868-2454</span>
+              </div>
+              <div class="contact-form__form-container__item-text">
+                <span class="icon-envelope"></span>
+                <span>montichello@service.com</span>
+              </div>
+              <div class="contact-form__form-container__item-text">
+                <span class="icon-time"></span>
+                <span>From 07:05AM to 19:30PM</span>
+              </div>
+            </div>
+            <div class="contact-form__form-container__input">
+              <input
+                type="text"
+                placeholder="Mollie Medina"
+                value="Mollie Medina"
+                class="contact-form__form-container__input-item"
+              />
+              <input
+                type="email"
+                placeholder="Email"
+                class="contact-form__form-container__input-item"
+              />
+              <button
+                type="submit"
+                class="contact-form__form-container__input-button"
+              >
+                Submit
+              </button>
+            </div>
+          </div>
+        </form>
+      </section>
+    </main>
+    <footer class="footer">
+      <div class="footer__footer-container">
+        <div class="footer__logo-wrapper">
+          <div class="footer__logo-container">
+            <img src="src/img/logo.svg" alt="logo" class="footer__logo" />
+          </div>
+          <p class="footer__text">Copyrights © 2020 Montichello</p>
+        </div>
+        <div class="footer__social-icons-container">
+          <div class="footer__social-icon-wrapper">
+            <span class="icon-facebook__social"></span>
+          </div>
+          <div class="footer__social-icon-wrapper">
+            <span class="icon-twitter__social"></span>
+          </div>
+          <div class="footer__social-icon-wrapper">
+            <span class="icon-instagram__social"></span>
+          </div>
+        </div>
+      </div>
+      <div class="img-holder">
+        <img
+          src="src/img/footer_background.png"
+          alt="building"
+          class="img-desktop1920"
+        />
+        <img
+          src="src/img/footer_background.png"
+          alt="building"
+          class="img-desktop1360"
+        />
+        <img
+          src="src/img/footer_background.png"
+          alt="building"
+          class="img-desktop1024"
+        />
+        <img
+          src="src/img/footer_background.png"
+          alt="building"
+          class="img-tablet768"
+        />
+        <img
+          src="src/img/footer_background.png"
+          alt="building"
+          class="img-mobile576"
+        />
+      </div>
+    </footer>
+    <script src="src/js/fancybox.js"></script>
+    <script src="src/js/swiper.js"></script>
+    <script src="src/js/index.js"></script>
+    <script
+      async
+      src="https://maps.googleapis.com/maps/api/js?key=AIzaSyA60JX3ITXeCD5pKxtp_5iUvpdj1OclNYY&callback=initMap"
+    ></script>
+  </body>
+</html>
