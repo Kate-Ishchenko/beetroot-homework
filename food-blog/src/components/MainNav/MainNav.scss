@@ -1,0 +1,238 @@
+@import "../../scss/mixins";
+@import "../../scss/variables";
+
+.main-nav {
+    background-color: $red;
+    color: $white;
+    font-family: "Aleo", serif;
+    font-size: 14px;
+    font-weight: 400;
+    max-width: 1920px;
+    height: 84px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    margin: 0 auto;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 15;
+
+    @include media("<=768px") {
+      height: 136px;
+    }
+    @include media("<=576px") {
+      height: 84px;
+    }
+
+    .main-nav__container {
+      margin: 0 auto;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      position: relative;
+
+      @include media("<=1024px") {
+        width: 93.75%;
+      }
+
+      @include media("<=768px") {
+        width: 74.87%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+      }
+
+      @include media("<=576px") {
+        width: 100%;
+      }
+
+      @include media(">1024px") {
+        width: 83.82%;
+      }
+
+      @media screen and (min-width: 1360px) {
+        width: 83.82%;
+      }
+
+      @media screen and (min-width: 1920px) {
+        width: 68.75%;
+      }
+    }
+
+    .main-nav__mobile-menu-container {
+      position: absolute;
+      background-color: $red;
+      width: 100%;
+      height: 300px;
+      z-index: 10;
+      display: none;
+      transition: all 0.5s ease-in-out;
+      transform: translateX(-576px);
+      margin-top: 220px;
+      padding: 0 16px;
+
+      @include media("<=576px") {
+        display: block;
+      }
+
+      .main-nav__mobile-menu-logo-wrapper {
+        width: 100%;
+        height: 84px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
+
+      .main-nav__mobile-menu-logo {
+        font-family: "Josefin Sans";
+        font-style: normal;
+        font-weight: 700;
+        font-size: 24px;
+        line-height: 28px;
+        letter-spacing: 2px;
+        text-transform: uppercase;
+      }
+
+      .main-nav__mobile-menu-close__icon-wrapper {
+        width: 32px;
+        height: 32px;
+        position: absolute;
+        top: 22px;
+        right: 23.3px;
+        cursor: pointer;
+      }
+
+      .main-nav__mobile-menu-close__icon-wrapper .bx {
+          font-size: 32px;
+      }
+
+      .main-nav__mobile-menu-close__icon {
+        width: 100%;
+        height: 100%;
+      }
+
+      .main-nav__mobile-menu {
+        list-style: none;
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        gap: 6px;
+        padding: 0;
+
+        .main-nav__mobile-item {
+          font-family: "Aleo";
+          font-style: normal;
+          font-weight: 400;
+          font-size: 14px;
+          line-height: 20px;
+          width: 100%;
+          text-align: center;
+          border-radius: 5px;
+          padding: 12px 0;
+          cursor: pointer;
+        }
+
+        .main-nav__mobile-item:hover {
+          background-color: $white;
+        }
+
+        .main-nav__mobile-item:hover a {
+          color: $accent_darker;
+        }
+
+        .main-nav__mobile-link {
+          text-transform: uppercase;
+          text-decoration: none;
+          color: $white;
+          cursor: pointer;
+          letter-spacing: 2px;
+        }
+      }
+    }
+
+    .main-nav__burger-icon__wrapper {
+      width: 32px;
+      height: 32px;
+      position: absolute;
+      right: 18px;
+      display: none;
+      cursor: pointer;
+
+      @include media("<=576px") {
+        display: block;
+      }
+
+    }
+
+    .main-nav__burger-icon__wrapper .bx {
+      font-size: 32px;
+    }
+    .main-nav__logo {
+      font-family: "Josefin Sans";
+      font-style: normal;
+      font-weight: 700;
+      font-size: 24px;
+      letter-spacing: 2px;
+      text-transform: uppercase;
+      padding-top: 6px;
+
+      a {
+        text-decoration: none;
+        color: $white;
+      }
+
+      a:visited,
+      a:active {
+        color: $white;
+      }
+    }
+
+    .main-nav__menu {
+      list-style: none;
+      display: flex;
+      align-items: center;
+      gap: 24px;
+      padding: 0;
+
+      @include media("<=576px") {
+        display: none;
+      }
+    }
+
+    .main-nav__item {
+      text-align: center;
+    }
+
+    .main-nav__link {
+      padding: 16px 8px;
+      text-transform: uppercase;
+      text-decoration: none;
+      color: $white;
+      cursor: pointer;
+    }
+
+    .main-nav__link:hover,
+    .main-nav__link:focus {
+      padding: 16px 8px;
+      background: $white;
+      color: $accent_darker;
+      border-radius: 5px;
+      font-weight: 500;
+      transition: 0.3s all;
+    }
+  }
+
+  .main-nav.shadow {
+    background: $accent_darker;
+    transition: 0.4s;
+    box-shadow: 0 5px 4px rgba(0, 0, 0, 0.1);
+  }
+
+  .active {
+    transform: translateX(0) !important;
+  }
+  
