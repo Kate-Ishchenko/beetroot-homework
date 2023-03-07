@@ -1,0 +1,51 @@
+@import "../../scss/variables";
+
+.trending-title {
+    color: $blue;
+    font-size: 24px;
+}
+.trending-container {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: 1fr;
+  grid-column-gap: 18px;
+  grid-row-gap: 18px;
+  padding: 18px 0;
+}
+.movie-card-container {
+    display: flex;
+    flex-direction: column;
+    padding: 6px 12px;
+  //   width: 200px;
+    gap: 6px;
+    box-shadow: 1px 1px 6px -2px rgba(0, 0, 0, 1);
+    border-radius: 5px;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    transition: 0.1s all ease-in;
+  
+    &:hover,
+    &:focus {
+      background-color: $blue;
+      color: $white;
+    }
+  
+    .movie-card-poster {
+      width: 100%;
+      display: block;
+      border-radius: 5px;
+    }
+  
+    .movie-card-subtitle {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      width: 100%;
+    }
+  }
+  
+  .css-1c32n2y-MuiBadge-root {
+    right: -100px;
+    top: 24px;
+  }
