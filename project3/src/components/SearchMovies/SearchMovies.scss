@@ -1,0 +1,50 @@
+@import "../../scss/variables";
+
+.trending-title {
+  color: $blue;
+  font-size: 24px;
+}
+
+.trending-container {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: 1fr;
+  grid-column-gap: 18px;
+  grid-row-gap: 18px;
+  padding: 18px 0;
+
+  @media screen and (max-width: 1280px) {
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  @media screen and (max-width: 1024px) {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  @media screen and (max-width: 768px) {
+    grid-template-columns: repeat(1, 1fr);
+    grid-template-rows: 630px;
+    justify-content: center;
+  }
+}
+
+.search-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 500px;
+  margin: 0 auto;
+}
+
+.tabs-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 500px;
+  margin: 0 auto;
+  padding: 12px 0;
+}
+
+.css-1ujnqem-MuiTabs-root {
+  width: 100%;
+}
