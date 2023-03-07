@@ -1,0 +1,213 @@
+@import "../../scss/mixins";
+@import "../../scss/variables";
+
+.recipe {
+    padding: 16px 0;
+    font-family: "Aleo", serif;
+  
+    .recipe__wrapper {
+      max-width: 1280px;
+      margin: 0 auto;
+      padding: 32px;
+      text-align: center;
+    }
+  
+    .recipe__meal-container {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 24px;
+      text-align: center;
+    }
+  
+    .recipe__search-title {
+      padding-bottom: 32px;
+    }
+  
+    .recipe__search-subtitle {
+      color: #ff6363;
+      font-size: 28px;
+      font-weight: 600;
+      width: 100%;
+      grid-area: 1 / span 3;
+    }
+    .recipe__meal-item {
+      overflow: hidden;
+      box-shadow: 0 4px 21px -12px rgba(0, 0, 0, 0.79);
+      padding: 15px;
+      border-radius: 8px;
+      cursor: pointer;
+    }
+  
+    .recipe__meal-item:hover {
+      box-shadow: 0 4px 14px $red;
+    }
+  
+    .recipe__meal-img img {
+      width: 100%;
+      display: block;
+      width: 100%;
+      height: 220px;
+      -o-object-fit: cover;
+      object-fit: cover;
+      -o-object-position: center;
+      object-position: center;
+      border-radius: 8px;
+    }
+    .recipe__meal-name {
+      padding: 24px 8px;
+    }
+    .recipe__meal-name h3 {
+      font-size: 22px;
+    }
+  
+    .recipe__main-btn {
+      font-family: inherit;
+      cursor: pointer;
+      outline: 0;
+      font-size: 16px;
+    }
+  
+    .recipe__btn {
+      text-decoration: none;
+      color: #fff;
+      background: $red;
+      font-weight: 500;
+      font-size: 18px;
+      padding: 12px 0;
+      display: block;
+      width: 175px;
+      margin: 16px auto;
+      border-radius: 8px;
+      transition: all 0.4s linear;
+      border: none;
+      outline: none;
+      cursor: pointer;
+    }
+    .recipe__btn:hover {
+      background: $accent_darker;
+    }
+  
+    .recipe__meal-details {
+      position: fixed;
+      top: 70%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      color: #fff;
+      background: $red;
+      border-radius: 16px;
+      width: 70%;
+      height: 90%;
+      overflow-y: scroll;
+      // display: none;
+      padding: 32px 0;
+      z-index: 15;
+    }
+    .recipe__meal-details::-webkit-scrollbar {
+      width: 10px;
+    }
+    .recipe__meal-details::-webkit-scrollbar-thumb {
+      background: #f0f0f0;
+      border-radius: 32px;
+    }
+  
+    .recipe__show-recipe {
+      display: block;
+    }
+  
+    .recipe__meal-details-content {
+      padding: 32px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 16px;
+    }
+  
+    .recipe__meal-instruction-text {
+      line-height: 28px;
+    }
+    .recipe__close-btn {
+      position: absolute;
+      right: 32px;
+      top: 32px;
+      font-size: 32px;
+      border: none;
+      width: 35px;
+      height: 35px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      background: transparent;
+    }
+  
+    .bx-x {
+      color: white;
+    }
+  
+    .recipe__meal-category {
+      background: #fff;
+      font-weight: 600;
+      text-align: center;
+      color: $red;
+      display: inline-block;
+      padding: 4px 8px;
+      border-radius: 5px;
+    }
+    .recipe__meal-instruction {
+      padding: 0 16px;
+    }
+    .recipe__meal-image img {
+      width: 100px;
+      height: 100px;
+      border-radius: 50%;
+      margin: 0 auto;
+      display: block;
+    }
+    .recipe__link {
+      padding: 22px 0;
+    }
+    .recipe__link a {
+      color: #fff;
+      font-size: 20px;
+      font-weight: 700;
+      transition: all 0.4s linear;
+      -webkit-transition: all 0.4s linear;
+      -moz-transition: all 0.4s linear;
+      -ms-transition: all 0.4s linear;
+      -o-transition: all 0.4s linear;
+    }
+    .recipe__link a:hover {
+      opacity: 0.8;
+    }
+  
+    .notFound {
+      grid-template-columns: 1fr !important;
+      color: $red;
+      font-size: 28px;
+      font-weight: 600;
+      width: 100%;
+    }
+  
+    @media screen and (max-width: 1011px) {
+      .recipe__meal-container {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        justify-content: center;
+        gap: 24px;
+      }
+  
+      @media screen and (max-width: 687px) {
+        .recipe__meal-container {
+          display: flex;
+          flex-direction: column;
+          justify-content: center;
+          gap: 24px;
+        }
+        .meal-item {
+          margin: 0;
+        }
+        .meal-details {
+          width: 700px;
+        }
+      }
+    }
+  }
