@@ -1,0 +1,60 @@
+@import "../../scss/mixins";
+@import "../../scss/variables";
+
+.footer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    width: 100%;
+    max-width: 1920px;
+    height: 268px;
+    background-color: $accent_darker;
+    color: $white;
+    margin: 0 auto;
+    font-family: "Josefin Sans";
+    font-style: normal;
+  
+    .footer__title {
+      font-weight: 700;
+      font-size: 24px;
+      line-height: 28px;
+      letter-spacing: 2px;
+      text-transform: uppercase;
+      margin-bottom: 8px;
+    }
+  
+    .footer__subtitle {
+      font-weight: 400;
+      font-size: 14px;
+      line-height: 20px;
+      letter-spacing: 4px;
+      margin-bottom: 20px;
+    }
+  
+    .footer__icon-container {
+      width: 100%;
+    }
+  
+    .footer__icon-list {
+      width: 100%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 32px;
+      list-style: none;
+      padding: 0;
+    }
+  
+    .footer__social-icon .bx {
+      font-size: 36px;
+      color: $white;
+    }
+  
+    .footer__social-icon .bx:hover,
+    .footer__social-icon .bx:focus {
+      color: $black;
+      transition: 0.3s all;
+    }
+  }
+  
