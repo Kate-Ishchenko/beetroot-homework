@@ -1,0 +1,18 @@
+@import "../../scss/variables";
+
+.header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 75px;
+    width: 100%;
+    // max-width: 1920px;
+    position: fixed;
+    z-index: 20;
+    box-shadow: 0px 0px 3px $black;
+    font-family: 'Marck Script', cursive;
+    color: $blue;
+    font-size: 28px;
+    cursor: pointer;
+    background-color: $white;
+}
